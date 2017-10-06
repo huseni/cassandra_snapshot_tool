@@ -1,0 +1,2 @@
+1 2 * * * DATE=`/bin/date +\%Y-\%m-\%d`; /opt/devops/cron/run_upload_cassandra_snapshot_to_s3.sh >> /opt/devops/cron/logs/run_upload_cassandra_snapshot_to_s3_${DATE}.log
+30 2 * * * DATE=`/bin/date +\%Y-\%m-\%d`; /opt/devops/cron/run_snapshot_cassandra.py >> /opt/devops/cron/logs/run_snapshot_cassandra_${DATE}.log
